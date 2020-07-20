@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        // window.onload = function() {
+        //     var btn = document.getElementById("btn");
+        //     btn.onclick = function() {
+        //         alert("실행됨");
+        //     }
+        // }
+
+
+        // 자바스크립트랑 JQuery랑 혼용하면 안좋음
+        // window.onload랑 거의 비슷하게 실행되는 구조 - 많이 쓰임
+        $(document).ready(function() {
+            var btn = document.getElementById("btn");
+            btn.onclick = function() {
+                alert("실행됨");
+            }
+        })
+
+
+        // // 자바스크립트의 window.onload와 완전히 같은 역할
+        // $(window).load(function(){
+
+        // })
+
+    </script>
+
+    <button type="button" id="btn">버튼테스트</button>
+
+</body>
+</html>
